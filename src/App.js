@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Card from './components/Card';
+import { ProductArray } from './Helper';
 import './App.css';
 
-function App() {
+const App = () => {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <Header/>
+     <div className='program_section'>
+
+       {ProductArray.map( (prod) => (
+         <Card 
+         image={prod.imgSrc} 
+         price={prod.price} 
+         productName={prod.product} />
+         
+         )
+       )}
+       {ProductArray.map( (prod) => (
+         <Card 
+         image={prod.imgSrc} 
+         price={prod.price} 
+         productName={prod.product} />
+         
+         )
+       )}
+      {/* <Card image={ProdImageone} price={1299} productName="Shoes"/>
+      <Card image={ProdImageTwo} price={899} productName="Makeup Kit"/>
+      <Card image={ProdImageThree} price={799} productName="Wrist Watch"/>
+      <Card image={ProdImageFour} price={999} productName="Ear Pods"/>
+      */}
+     </div>
+     <Footer/>
+
+    </>
   );
-}
+};
 
 export default App;

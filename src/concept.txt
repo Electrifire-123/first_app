@@ -1,0 +1,33 @@
+
+components - types (functional and class)
+JSX 
+Props 
+Styles
+
+logo url = https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes/svg
+
+What is components?
+
+- Bulding blocks of react.
+- Reusable piece of code which consist JSX (UI) and JavaScript as a business logic.
+- Types => functional components (>16.8) | Class components (till 16.8),
+
+Reason functional components=>
+1. Simpler Syntax.
+2. Easy to understand, implement and learn.
+3. Capable to make an Facebook like application.
+
+JSX JavaScript Extensible Lang
+1. Your JSX should return one element only.
+2. All tags in JSX should be closed. <img src=""> = X | <img src="" />
+3. Class/for => JSX : className / htmlFor 
+4. HTML Attributes => camelCase (onClick, className, onMouseOver, etc)
+5. Inline Styles should be in object form.
+
+Props(properties) :- 
+1. To pass data(state, JS variable, JS function, array, object anything ) from parent to child components.
+
+Interview :- 
+1.Difference between normal function and arrow functions. => 
+normal function has access to this keyword ,
+and arrow functions does not have access to this keyword.
